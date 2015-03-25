@@ -18,11 +18,11 @@ public class LevelUpgrade : MonoBehaviour {
     }
 
     [SerializeField]
-    private string _name;
-    public string name
+    private string _toweName;
+    public string toweName
     {
-        get { return _name; }
-        set { _name = value; }
+        get { return _toweName; }
+        set { _toweName = value; }
     }
     [SerializeField]
     private string _iconPath;

@@ -6,6 +6,8 @@ public class UpgradeMenuScript : MonoBehaviour {
 
     private GameObject currentGameObject;
     public Image image;
+    public Text titleTF;
+    public Text levelTF;
 	
 	void Start () {
       
@@ -32,5 +34,8 @@ public class UpgradeMenuScript : MonoBehaviour {
 
         Sprite sprite = Resources.Load<Sprite>("Sprites/" + levelUpgradeData.iconPath);
         image.sprite = sprite;
+
+        titleTF.text = levelUpgradeData.toweName;
+        levelTF.text = "next level: "+levelUpgradeData.level.ToString();
     }
 }
